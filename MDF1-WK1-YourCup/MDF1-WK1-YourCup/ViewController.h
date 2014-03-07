@@ -8,14 +8,15 @@
 
 #import <UIKit/UIKit.h>
 #import "DataLayer.h"
-#import "UIImage+ImageEffects.h"
 
 @interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>{
     
     DataLayer *dataLayer;
+    DataLayer *currentCell;
     IBOutlet UITableView* myTableView;
     
     NSMutableArray* cellMatchArray;
+    int index;
     
 }
 

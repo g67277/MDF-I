@@ -10,34 +10,97 @@
 #import "DataLayer.h"
 #import "CustomCell.h"
 #import "DetailsView.h"
+#import <QuartzCore/QuartzCore.h>
+
 
 @interface ViewController ()
+
+@property (weak, nonatomic) IBOutlet UIImageView *backgroundImg;
+
 
 @end
 
 @implementation ViewController
 
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    
+    NSLog(@"This is one");
+    return [cellMatchArray count]; // in your case, there are 3 cells
+}
+
+
 //------------------------------------- Number of rows ------------------------------------------------------------
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
-    return [cellMatchArray count];
+     NSLog(@"This is Two");
+    
+    return 1;
 }
 //-----------------------------------------------------------------------------------------------------------------
+
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    
+    NSLog(@"This is Three");
+    
+    return 20; // you can have your own choice, of course
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    return 40;
+}
+
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    
+    NSLog(@"This is four");
+    UIView *headerView = [[UIView alloc] init];
+    headerView.backgroundColor = [UIColor clearColor];
+    return headerView;
+}
+
+
 
 //------------------------------------- Creating cells and adding words -------------------------------------------
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
+     NSLog(@"This is five");
+    NSLog(@"%@", indexPath);
+    
     CustomCell *cell = [tableView dequeueReusableCellWithIdentifier:@"myCell"];
     
-    DataLayer *currentCell = [cellMatchArray objectAtIndex:indexPath.row];
+    //UIColor *color = [UIColor colorWithRed:252/255.f green:252/255.f blue:252/255.f alpha:.4f];
+    
+    
+    cell.backgroundColor = [UIColor colorWithRed:252/255.f green:252/255.f blue:252/255.f alpha:.5f];
+    
+    if (index == [cellMatchArray count]) {
+        
+        // Do Nothing
+        
+    }else{
+        
+        currentCell = [cellMatchArray objectAtIndex:indexPath.row + index];
+        index++;
+    }
+    
     
     [cell refreshCellWithInfo:currentCell.cTeam1 team2:currentCell.cTeam2 team1Img:currentCell.cTeam1Image team2Img:currentCell.cTeam2Image];
+    
+    //[self tableView:tableView viewForHeaderInSection::0];
+    
     
     
     return cell;
 }
+
+
 //-----------------------------------------------------------------------------------------------------------------
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
@@ -85,6 +148,13 @@
 
 - (void)viewDidLoad
 {
+    index = 0;
+    // Setting tableview to clear
+ 
+    myTableView.backgroundColor = [UIColor clearColor];
+    
+    //self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:249/255.f green:249/255.f blue:249/255.f alpha:.0f];
+
     
     //white status bar
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
@@ -347,14 +417,35 @@
     
     //-----------------------------------------------------------------------------------------------------------------
 
-    
-    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Background"]];
-    
+    [self setupBlurredImage];
     [UIColor clearColor];
 
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
+
+- (void)setupBlurredImage
+{
+    UIImage *theImage = [UIImage imageNamed:@"Background2"];
+    
+    //create our blurred image
+    CIContext *context = [CIContext contextWithOptions:nil];
+    CIImage *inputImage = [CIImage imageWithCGImage:theImage.CGImage];
+    
+    //setting up Gaussian Blur (we could use one of many filters offered by Core Image)
+    CIFilter *filter = [CIFilter filterWithName:@"CIGaussianBlur"];
+    [filter setValue:inputImage forKey:kCIInputImageKey];
+    [filter setValue:[NSNumber numberWithFloat:8.0f] forKey:@"inputRadius"];
+    CIImage *result = [filter valueForKey:kCIOutputImageKey];
+    //CIGaussianBlur has a tendency to shrink the image a little, this ensures it matches up exactly to the bounds of our original image
+    CGImageRef cgImage = [context createCGImage:result fromRect:[inputImage extent]];
+    
+    //add our blurred image to the scrollview
+    self.backgroundImg.image = [UIImage imageWithCGImage:cgImage];
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageWithCGImage:cgImage] forBarMetrics:UIBarMetricsDefault];
+}
+
+
 
 - (void)didReceiveMemoryWarning
 {

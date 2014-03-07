@@ -24,7 +24,6 @@
 		812A42A718C8013F001F93DD /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 812A42A618C8013F001F93DD /* CustomCell.m */; };
 		812A42AA18C8021C001F93DD /* DataLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 812A42A918C8021C001F93DD /* DataLayer.m */; };
 		812A42B218C827A9001F93DD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 812A42B118C827A9001F93DD /* Images.xcassets */; };
-		812A42B518C82FCB001F93DD /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 812A42B418C82FCB001F93DD /* UIImage+ImageEffects.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,8 +62,6 @@
 		812A42A818C8021C001F93DD /* DataLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataLayer.h; sourceTree = "<group>"; };
 		812A42A918C8021C001F93DD /* DataLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataLayer.m; sourceTree = "<group>"; };
 		812A42B118C827A9001F93DD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		812A42B318C82FCB001F93DD /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
-		812A42B418C82FCB001F93DD /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,8 +121,6 @@
 		812A427318C7FA76001F93DD /* MDF1-WK1-YourCup */ = {
 			isa = PBXGroup;
 			children = (
-				812A42B318C82FCB001F93DD /* UIImage+ImageEffects.h */,
-				812A42B418C82FCB001F93DD /* UIImage+ImageEffects.m */,
 				812A427C18C7FA76001F93DD /* AppDelegate.h */,
 				812A427D18C7FA76001F93DD /* AppDelegate.m */,
 				812A427F18C7FA76001F93DD /* Main.storyboard */,
@@ -271,7 +266,6 @@
 			files = (
 				812A428418C7FA76001F93DD /* ViewController.m in Sources */,
 				812A42A418C7FDC2001F93DD /* DetailsView.m in Sources */,
-				812A42B518C82FCB001F93DD /* UIImage+ImageEffects.m in Sources */,
 				812A427E18C7FA76001F93DD /* AppDelegate.m in Sources */,
 				812A427A18C7FA76001F93DD /* main.m in Sources */,
 				812A42A718C8013F001F93DD /* CustomCell.m in Sources */,
