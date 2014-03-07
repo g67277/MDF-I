@@ -1,0 +1,23 @@
+//
+//  DetailViewController.h
+//  MDF1-Wk1-Test
+//
+//  Created by Nazir Shuqair on 3/3/14.
+//  Copyright (c) 2014 Me Time Studios. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import "DataLayer.h"
+#import "ViewController.h"
+
+@interface DetailViewController : UIViewController{
+    
+    IBOutlet UILabel *titleLabel;
+    IBOutlet UILabel *infoLabel;
+    
+}
+
+@property (nonatomic, strong) DataLayer* currentCell;
+
+
+@end
