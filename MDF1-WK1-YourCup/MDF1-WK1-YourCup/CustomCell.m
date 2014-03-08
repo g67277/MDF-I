@@ -19,6 +19,9 @@
     return self;
 }
 
+
+
+
 - (void) refreshCellWithInfo:(NSString*) team1 team2:(NSString*) team2 team1Img:(UIImage*)team1Img team2Img:(UIImage*)team2Img{
     
     team1Label.text = team1;

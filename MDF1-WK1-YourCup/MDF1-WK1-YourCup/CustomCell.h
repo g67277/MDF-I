@@ -12,6 +12,7 @@
     
     IBOutlet UILabel* team1Label;
     IBOutlet UILabel* team2Label;
+    IBOutlet UILabel* vs;
     
     IBOutlet UIImageView* team1Image;
     IBOutlet UIImageView* team2Image;

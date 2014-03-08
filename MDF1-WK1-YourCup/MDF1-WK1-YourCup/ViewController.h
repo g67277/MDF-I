@@ -16,7 +16,6 @@
     IBOutlet UITableView* myTableView;
     
     NSMutableArray* cellMatchArray;
-    int index;
     
 }
 

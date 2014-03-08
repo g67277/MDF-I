@@ -21,5 +21,6 @@
 @property (nonatomic, strong)NSString* cWeather;
 @property (nonatomic, strong)UIImage* cTeam1Image;
 @property (nonatomic, strong)UIImage* cTeam2Image;
+@property (nonatomic, strong)UIImage* cStadiumImg;
 
 @end

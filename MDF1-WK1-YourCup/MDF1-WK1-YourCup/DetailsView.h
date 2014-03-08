@@ -23,6 +23,15 @@
     
     IBOutlet UIImageView* dTeam1Image;
     IBOutlet UIImageView* dTeam2Image;
+    IBOutlet UIImageView* stadiumImg;
+    
+    IBOutlet UIView* box1;
+    IBOutlet UIView* box2;
+    IBOutlet UIView* box3;
+    
+    IBOutlet UIView* scrollBox;
+    IBOutlet UIScrollView* scrollView;
+    
     
 }
 
