@@ -7,10 +7,25 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BlurEffect.h"
+#import "CustomView.h"
+#import "ScheduleData.h"
+
 
 @interface ScheduleViewController : UIViewController{
     
     IBOutlet UITableView* ScheduleTableView;
+    
+    BlurEffect* blurEffect;
+    CustomView* customeView;
+    ScheduleData* scheduleData;
+    DataLayerSchedule *dataLayer;
+    DataLayerSchedule *currentCell;
+    
+    NSMutableArray* cellMatchArray;
+
 }
+
+
 
 @end

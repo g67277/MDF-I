@@ -21,6 +21,7 @@
 @property (nonatomic, strong)UIImage* cTeam1Image;
 @property (nonatomic, strong)UIImage* cTeam2Image;
 @property (nonatomic, strong)UIImage* cStadiumImg;
+@property (nonatomic, strong)UIImage* cCityImg;
 
 
 @end

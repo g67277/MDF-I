@@ -16,6 +16,7 @@
     
     IBOutlet UIImageView* team1Image;
     IBOutlet UIImageView* team2Image;
+    
 }
 
 

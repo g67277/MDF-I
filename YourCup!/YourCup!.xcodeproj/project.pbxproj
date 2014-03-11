@@ -27,6 +27,7 @@
 		81841B9A18CCCCAB00F955AF /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81841B9918CCCCAB00F955AF /* CustomCell.m */; };
 		81841BA118CCCEC800F955AF /* DataLayerSchedule.m in Sources */ = {isa = PBXBuildFile; fileRef = 81841BA018CCCEC800F955AF /* DataLayerSchedule.m */; };
 		81841BA418CCCF2D00F955AF /* ScheduleDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81841BA318CCCF2D00F955AF /* ScheduleDetailsViewController.m */; };
+		81841BAA18CCD6B100F955AF /* ScheduleData.m in Sources */ = {isa = PBXBuildFile; fileRef = 81841BA918CCD6B100F955AF /* ScheduleData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,8 @@
 		81841BA018CCCEC800F955AF /* DataLayerSchedule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataLayerSchedule.m; sourceTree = "<group>"; };
 		81841BA218CCCF2D00F955AF /* ScheduleDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleDetailsViewController.h; sourceTree = "<group>"; };
 		81841BA318CCCF2D00F955AF /* ScheduleDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleDetailsViewController.m; sourceTree = "<group>"; };
+		81841BA818CCD6B100F955AF /* ScheduleData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleData.h; sourceTree = "<group>"; };
+		81841BA918CCD6B100F955AF /* ScheduleData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +189,8 @@
 				81841BA018CCCEC800F955AF /* DataLayerSchedule.m */,
 				81841BA218CCCF2D00F955AF /* ScheduleDetailsViewController.h */,
 				81841BA318CCCF2D00F955AF /* ScheduleDetailsViewController.m */,
+				81841BA818CCD6B100F955AF /* ScheduleData.h */,
+				81841BA918CCD6B100F955AF /* ScheduleData.m */,
 			);
 			name = Schedule;
 			sourceTree = "<group>";
@@ -295,6 +300,7 @@
 				81841B9A18CCCCAB00F955AF /* CustomCell.m in Sources */,
 				812A431518CC1E8C001F93DD /* AppDelegate.m in Sources */,
 				812A431118CC1E8C001F93DD /* main.m in Sources */,
+				81841BAA18CCD6B100F955AF /* ScheduleData.m in Sources */,
 				81841BA418CCCF2D00F955AF /* ScheduleDetailsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

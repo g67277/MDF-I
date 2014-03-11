@@ -10,12 +10,12 @@
 
 @implementation CustomView
 
-- (UIView *) uniformView:(UIView*)receivedView{
+- (UIView *) uniformView:(UIView*)receivedView color:(UIColor*) color{
     
     UIView* customeView = receivedView;
     
     customeView.layer.cornerRadius = 1;
-    customeView.backgroundColor = [UIColor colorWithWhite:1 alpha:.90];
+    customeView.backgroundColor = color;
     customeView.layer.shadowOpacity = 0.8;
     customeView.layer.shadowRadius = 1;
     customeView.layer.shadowOffset = CGSizeMake(0.0f, 1.0f);

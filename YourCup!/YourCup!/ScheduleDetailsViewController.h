@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DataLayerSchedule.h"
 
 @interface ScheduleDetailsViewController : UIViewController{
     
@@ -19,9 +20,15 @@
     IBOutlet UILabel* city;
     IBOutlet UILabel* weather;
     
+    // needs refactoring
+    
     IBOutlet UIImageView* dTeam1Image;
     IBOutlet UIImageView* dTeam2Image;
+    IBOutlet UIImageView* dTeam1Image2;
+    IBOutlet UIImageView* dTeam2Image2;
+    //-------------------------------
     IBOutlet UIImageView* stadiumImg;
+    IBOutlet UIImageView* cityImg;
     
     IBOutlet UIView* box1;
     IBOutlet UIView* box2;
@@ -31,5 +38,7 @@
     IBOutlet UIScrollView* scrollView;
 
 }
+
+@property (nonatomic, strong) DataLayerSchedule* currentCell;
 
 @end

@@ -7,12 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BlurEffect.h"
+#import "CustomView.h"
 
 @interface ViewController : UIViewController{
     
     IBOutlet UIView* mainBox;
     IBOutlet UIView* detailText;
     IBOutlet UIImageView* detailPanner;
+    
+    BlurEffect* blurEffect;
+    CustomView* customeView;
     
     
 }

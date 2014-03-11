@@ -478,6 +478,7 @@
 				812A429E18C7FA76001F93DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		812A429F18C7FA76001F93DD /* Build configuration list for PBXNativeTarget "MDF1-WK1-YourCupTests" */ = {
 			isa = XCConfigurationList;
@@ -486,6 +487,7 @@
 				812A42A118C7FA76001F93DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

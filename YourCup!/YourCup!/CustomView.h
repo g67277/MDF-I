@@ -10,7 +10,7 @@
 
 @interface CustomView : NSObject
 
-- (UIView *) uniformView:(UIView*)receivedView;
+- (UIView *) uniformView:(UIView*)receivedView color:(UIColor*) color;
 - (UIImageView *) uniformImgBox:(UIImageView*)receivedImg;
 
 @end

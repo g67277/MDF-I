@@ -22,21 +22,37 @@
 {
     // initializing classes
     
-    BlurEffect* blurEffect = [[BlurEffect alloc] init];
-    CustomView* customeView = [[CustomView alloc] init];
+    blurEffect = [[BlurEffect alloc] init];
+    customeView = [[CustomView alloc] init];
+    
+        
     
     // Changing the uiview/image box
     
-    mainBox = [customeView uniformView:mainBox];
-    detailText = [customeView uniformView:detailText];
+    mainBox = [customeView uniformView:mainBox color:[UIColor colorWithWhite:1 alpha:1]];
+    detailText = [customeView uniformView:detailText color:[UIColor colorWithWhite:1 alpha:1]];
     detailPanner = [customeView uniformImgBox:detailPanner];
     
     
     
     // adding a backgound blur
     
-    UIImage* background = [UIImage imageNamed:@"main background"];
+    UIImage* background = [UIImage imageNamed:@"brazil back"];
     self.backgroundImg.image = [blurEffect setupBlurredImage:background];
+    
+    // Nav bar custome title/buttons
+    
+    //[self.navigationController.navigationBar setBackgroundImage:topBackground forBarMetrics:UIBarMetricsDefault];
+    
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+    self.tabBarController.tabBar.tintColor = [UIColor whiteColor];
+    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor], NSFontAttributeName : [UIFont fontWithName:@"HelveticaNeue-UltraLight" size:40]}];
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
+    
+    // Tab bar custome changes
+    
+    self.tabBarController.tabBar.tintColor = [UIColor whiteColor];
+
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
