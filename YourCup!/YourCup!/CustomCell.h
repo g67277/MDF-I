@@ -17,10 +17,16 @@
     IBOutlet UIImageView* team1Image;
     IBOutlet UIImageView* team2Image;
     
+    // Full Sail Table View
+    
+    IBOutlet UILabel* researchLabel;
+    IBOutlet UIImageView* researchImg;
+    
+    
 }
 
 
 - (void) refreshCellWithInfo:(NSString*) team1 team2:(NSString*) team2 team1Img:(UIImage*)team1Img team2Img:(UIImage*)team2Img;
-
+- (void) refreshResearchCellInfo:(NSString*) rLabel rImage:(UIImage *) rImage;
 
 @end

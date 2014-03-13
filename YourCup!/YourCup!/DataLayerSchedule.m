@@ -10,6 +10,7 @@
 
 @implementation DataLayerSchedule
 @synthesize cCity,cDate,cTeam1,cTeam1Image,cTeam1Points,cTeam2,cTeam2Image,cTeam2Points,cTime,cWeather, cStadiumImg, cCityImg;
+@synthesize cLinkLabel, cResearchImg, cResearchLabel, cResearchText;
 
 
 

@@ -287,4 +287,43 @@
     return cellMatchArray;
 }
 
+- (NSMutableArray*) researchArray{
+    
+    DataLayerSchedule * cell1 = [[DataLayerSchedule alloc]init];
+    cell1.cResearchLabel = @"FIFA 2010 World Cup: A symbol of carnival or menace?";
+    cell1.cResearchText = @"Researchers have observed that during a major sporting event, participating nations are transformed into sites of carnival and patriotic celebration. National flags are important symbols, increasingly used to denote support for the national team and to express group identity. Using findings from a qualitative study of sojourner perceptions of a transformed England during the FIFA World Cup 2010, this paper explores how the display of the England national flag (St George Cross) is decoded by national outsiders to the culture. Two conflicting themes emerged from an inductive thematic analysis of data. The England flag is perceived as both a positive symbol of national pride and a signifier of potential violence.";
+    cell1.cLinkLabel = @"http://alturl.com/f7e3j";
+    cell1.cResearchImg = [UIImage imageNamed:@"netherlands"];
+    
+    DataLayerSchedule * cell2 = [[DataLayerSchedule alloc]init];
+    cell2.cResearchLabel = @"The successes and challenges of hosting the 2010 FIFA World Cup";
+    cell2.cResearchText = @"In 2010 the FIFA World Cup finals were held on the African Continent for the first time with South Africa chosen to host the month-long event. Crucially, the hosting of such a prestigious tournament was seen as a chance for South Africa to prove to the world that as a developing nation it could successfully host an event of this magnitude. Using contemporary reports and incorporating findings from in-depth interviews conducted with national and regional event and destination stakeholders, this paper explores the challenges and successes of hosting the 2010 World Cup in South Africa. Primarily, focusing on the experiences of the host City of Cape Town, this study investigates the branding opportunities and challenges associated with the 2010 tournament as well as actual impact and legacy of the event on social factors, such as nation building, social cohesion and racial integration.";
+    cell2.cLinkLabel = @"http://alturl.com/gouon";
+    cell2.cResearchImg = [UIImage imageNamed:@"chile"];
+    
+    DataLayerSchedule * cell3 = [[DataLayerSchedule alloc]init];
+    cell3.cResearchLabel = @"Soccer and media in Brazil";
+    cell3.cResearchText = @"This essay analyzes the complex relations between soccer and media in Brazil. Both massmedia and sports arrived in Brazil at the same time, in the late nineteenth century, both associated with the values of modernity in urban centres. It discusses the media coverage of the World Cup and data regarding audiences in particular. The World Cup is considered to be a very important social fact in contemporary Brazilian culture, and since its beginning, the World Cup has been available in Brazil exclusively through the mass media. Since the first international radio transmissions in the late 1930s, Brazil’s matches reached outstanding audience numbers. In the last three World Cups, the share of the total audience for the matches was around 95%, something like 110 million viewers per match, on average. The essay discusses the media’s role in projecting Brazilian football.";
+    cell3.cLinkLabel = @"http://alturl.com/3h36w";
+    cell3.cResearchImg = [UIImage imageNamed:@"netherlands"];
+    
+    DataLayerSchedule * cell4 = [[DataLayerSchedule alloc]init];
+    cell4.cResearchLabel = @"South Africa under FIFA's reign: The World Cup's contribution to urban development";
+    cell4.cResearchText = @"When South Africa hosted the 2010 FIFA World Cup, the move to stage this mega-event at the southern tip of the African continent was lauded as a timely acknowledgement of the growing importance of the ‘global south’. Most of the fears that had been raised before the kick-off proved immaterial once the event was under way. Nine host cities enjoyed the international spotlight; the new and revamped stadiums were the focus of the media. Behind the scenes, however, more infrastructure had to be created, locational decisions taken and structures of governance honed. That this process was thoroughly influenced by FIFA's wishes can be demonstrated by focusing on a few strategic elements, such as the site selection for stadiums and fan parks. The findings in this article sustain the dominant argument in mega-event research: urban development and governance in the host cities are severely affected by these events.";
+    cell4.cLinkLabel = @"http://alturl.com/bj72b";
+    cell4.cResearchImg = [UIImage imageNamed:@"chile"];
+    
+    DataLayerSchedule * cell5 = [[DataLayerSchedule alloc]init];
+    cell5.cResearchLabel = @"German Soccer, the 2010 World Cup, and Multicultural Belonging.";
+    cell5.cResearchText = @"The celebrations of the \"multicultural\" German national soccer team for the 2010 World Cup and the subsequent declaration of the failure of German multiculturalism reveal complex constructions of national belonging and of postnational identity constructions, and affective ties to the idea of Europe in twenty-first century Germany. Within what appears to be an enthusiastic celebration of a multicultural German team, we uncover a set of converging emotions about what Germany and Europe stand for and what they could or should embody. Such contradictory discourses provide a fundamental tension that defines \"feeling Germany\" and \"feeling Europe\" in the first part of the twenty-first century. ";
+    cell5.cLinkLabel = @"http://alturl.com/xabnk";
+    cell5.cResearchImg = [UIImage imageNamed:@"netherlands"];
+    
+    cellResearchArray = [[NSMutableArray alloc] initWithObjects:cell1, cell2, cell3, cell4, cell5, nil];
+    
+    return cellResearchArray;
+}
+
+
+
 @end

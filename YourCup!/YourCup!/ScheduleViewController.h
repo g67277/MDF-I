@@ -15,14 +15,19 @@
 @interface ScheduleViewController : UIViewController{
     
     IBOutlet UITableView* ScheduleTableView;
+    IBOutlet UITableView* fullSailTableView;
     
     BlurEffect* blurEffect;
     CustomView* customeView;
     ScheduleData* scheduleData;
     DataLayerSchedule *dataLayer;
     DataLayerSchedule *currentCell;
+    DataLayerSchedule *currentCell2;
     
     NSMutableArray* cellMatchArray;
+    NSMutableArray* cellResearchArray;
+    
+
 
 }
 

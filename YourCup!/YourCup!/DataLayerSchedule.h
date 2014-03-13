@@ -23,5 +23,9 @@
 @property (nonatomic, strong)UIImage* cStadiumImg;
 @property (nonatomic, strong)UIImage* cCityImg;
 
+@property (nonatomic, strong)NSString* cResearchLabel;
+@property (nonatomic, strong)NSString* cLinkLabel;
+@property (nonatomic, strong)NSString* cResearchText;
+@property (nonatomic, strong)UIImage* cResearchImg;
 
 @end

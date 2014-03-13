@@ -37,7 +37,7 @@
     
     // adding a backgound blur
     
-    UIImage* background = [UIImage imageNamed:@"brazil back"];
+    UIImage* background = [UIImage imageNamed:@"brazil-back-2.jpg"];
     self.backgroundImg.image = [blurEffect setupBlurredImage:background];
     
     // Nav bar custome title/buttons

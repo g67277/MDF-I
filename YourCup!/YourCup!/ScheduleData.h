@@ -14,9 +14,11 @@
     DataLayerSchedule *dataLayer;
     
     NSMutableArray* cellMatchArray;
+    NSMutableArray* cellResearchArray;
     
 }
 
 - (NSMutableArray*) matchArray;
+- (NSMutableArray*) researchArray;
 
 @end

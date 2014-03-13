@@ -29,6 +29,13 @@
     
 }
 
+- (void) refreshResearchCellInfo:(NSString*) rLabel rImage:(UIImage *) rImage{
+
+    researchLabel.text = rLabel;
+    researchImg.image = rImage;
+    
+}
+
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated
 {

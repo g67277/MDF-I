@@ -11,6 +11,7 @@
 #import "CustomView.h"
 #import "DataLayerSchedule.h"
 #import "ScheduleDetailsViewController.h"
+#import "ResearchDetailsViewController.h"
 #import "CustomCell.h"
 
 @interface ScheduleViewController ()
@@ -26,9 +27,14 @@
 //------------------------------------- Number of rows ------------------------------------------------------------
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
-    //NSLog(@"This is One");
+    if (tableView.tag == 1) {
+        return [cellMatchArray count];
+    }else if (tableView.tag == 2){
+        return [cellResearchArray count];
+    }
     
-    return [cellMatchArray count];
+   
+    return 0;
 }
 //-----------------------------------------------------------------------------------------------------------------
 
@@ -39,14 +45,26 @@
     //NSLog(@"This is five");
     //NSLog(@"%@", indexPath);
     
-    CustomCell* cell = [tableView dequeueReusableCellWithIdentifier:@"scheduleCell"];
+    if (tableView.tag == 1) {
+        CustomCell* cell = [tableView dequeueReusableCellWithIdentifier:@"scheduleCell"];
+        currentCell = [cellMatchArray objectAtIndex:indexPath.row];
+        [cell refreshCellWithInfo:currentCell.cTeam1 team2:currentCell.cTeam2 team1Img:currentCell.cTeam1Image team2Img:currentCell.cTeam2Image];
+        cell.backgroundColor = [UIColor clearColor];
+        
+        return cell;
+        
+    }else if (tableView.tag == 2){
+        CustomCell* cell2 = [tableView dequeueReusableCellWithIdentifier:@"fullSailCell"];
+        currentCell2 = [cellResearchArray objectAtIndex:indexPath.row];
+        [cell2 refreshResearchCellInfo:currentCell2.cResearchLabel rImage:currentCell2.cResearchImg];
+        cell2.backgroundColor = [UIColor clearColor];
+
+        return cell2;
+    }
+     
     
-    currentCell = [cellMatchArray objectAtIndex:indexPath.row];
-    [cell refreshCellWithInfo:currentCell.cTeam1 team2:currentCell.cTeam2 team1Img:currentCell.cTeam1Image team2Img:currentCell.cTeam2Image];
     
-    cell.backgroundColor = [UIColor clearColor];
-    
-    return cell;
+    return nil;
 }
 //-----------------------------------------------------------------------------------------------------------------
 
@@ -54,18 +72,40 @@
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     
-    ScheduleDetailsViewController* detailView = segue.destinationViewController;
-    if (detailView != nil) {
-        UITableViewCell *cell = (UITableViewCell*)sender;
-        NSIndexPath *indexPath = [ScheduleTableView indexPathForCell:cell];
+    if ([segue.identifier  isEqual: @"researchToDetail"]) {
         
-        // get the string from the array based on the cell in the tabel view we clicked
+        ResearchDetailsViewController* researchDetail = segue.destinationViewController;
+        if (researchDetail != nil) {
+            UITableViewCell *cell2 = (UITableViewCell*)sender;
+            NSIndexPath *indexPath = [fullSailTableView indexPathForCell:cell2];
+            
+            NSLog(@"%ld", (long)indexPath);
+            
+            DataLayerSchedule* selectedString2 = [cellResearchArray objectAtIndex:indexPath.row];
+            
+            researchDetail.currentCell2 = selectedString2;
+        }
         
-        DataLayerSchedule *selectedString = [cellMatchArray objectAtIndex:indexPath.row];
+    }else if ([segue.identifier isEqual: @"scheduleToDetails"]){
         
-        
-        detailView.currentCell = selectedString;
+        ScheduleDetailsViewController* detailView = segue.destinationViewController;
+        if (detailView != nil) {
+            UITableViewCell *cell = (UITableViewCell*)sender;
+            NSIndexPath *indexPath = [ScheduleTableView indexPathForCell:cell];
+            
+            NSLog(@"%ld", (long)indexPath.row);
+
+            
+            // get the string from the array based on the cell in the tabel view we clicked
+            
+            DataLayerSchedule *selectedString = [cellMatchArray objectAtIndex:indexPath.row];
+            
+            
+            detailView.currentCell = selectedString;
+        }
+
     }
+    
     
     
 }
@@ -93,6 +133,10 @@
     // Match Schedule Data array
     
     cellMatchArray = [scheduleData matchArray];
+    cellResearchArray = [scheduleData researchArray];
+    
+    NSLog(@"%@", cellResearchArray);
+    
     
     // Setting tableview to clear
     
@@ -102,7 +146,7 @@
     
     // setting background image;
     
-    UIImage* backgroundImg = [UIImage imageNamed:@"spain back"];
+    UIImage* backgroundImg = [UIImage imageNamed:@"brazil-back-2.jpg"];
     
     
     // changing self background
