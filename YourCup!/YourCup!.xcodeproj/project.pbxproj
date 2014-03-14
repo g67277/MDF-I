@@ -28,8 +28,39 @@
 		81841BA118CCCEC800F955AF /* DataLayerSchedule.m in Sources */ = {isa = PBXBuildFile; fileRef = 81841BA018CCCEC800F955AF /* DataLayerSchedule.m */; };
 		81841BA418CCCF2D00F955AF /* ScheduleDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81841BA318CCCF2D00F955AF /* ScheduleDetailsViewController.m */; };
 		81841BAA18CCD6B100F955AF /* ScheduleData.m in Sources */ = {isa = PBXBuildFile; fileRef = 81841BA918CCD6B100F955AF /* ScheduleData.m */; };
-		81B78EF218CEAE7A0064D95B /* brazil-back-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 81B78EF118CEAE7A0064D95B /* brazil-back-2.jpg */; };
 		81B78F8818D154980064D95B /* ResearchDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B78F8718D154980064D95B /* ResearchDetailsViewController.m */; };
+		81B78F8C18D283D30064D95B /* brazil-team.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 81B78F8918D283D30064D95B /* brazil-team.jpg */; };
+		81B78F8D18D283D30064D95B /* italy-team.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 81B78F8A18D283D30064D95B /* italy-team.jpg */; };
+		81B78F8E18D283D30064D95B /* usa-team.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 81B78F8B18D283D30064D95B /* usa-team.jpg */; };
+		81B78F9D18D283F30064D95B /* belo-horizonte.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 81B78F9018D283F20064D95B /* belo-horizonte.jpg */; };
+		81B78F9E18D283F30064D95B /* brasilia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 81B78F9118D283F20064D95B /* brasilia.jpg */; };
+		81B78F9F18D283F30064D95B /* Cuiaba.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 81B78F9218D283F20064D95B /* Cuiaba.jpg */; };
+		81B78FA018D283F30064D95B /* curitiba.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 81B78F9318D283F20064D95B /* curitiba.jpg */; };
+		81B78FA118D283F30064D95B /* fortaleza.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 81B78F9418D283F20064D95B /* fortaleza.jpg */; };
+		81B78FA218D283F30064D95B /* manaus.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 81B78F9518D283F20064D95B /* manaus.jpg */; };
+		81B78FA318D283F30064D95B /* natal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 81B78F9618D283F30064D95B /* natal.jpg */; };
+		81B78FA418D283F30064D95B /* porto-alegre.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 81B78F9718D283F30064D95B /* porto-alegre.jpg */; };
+		81B78FA518D283F30064D95B /* recife.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 81B78F9818D283F30064D95B /* recife.jpg */; };
+		81B78FA618D283F30064D95B /* rio-de-janeiro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 81B78F9918D283F30064D95B /* rio-de-janeiro.jpg */; };
+		81B78FA718D283F30064D95B /* salvador.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 81B78F9A18D283F30064D95B /* salvador.jpg */; };
+		81B78FA818D283F30064D95B /* Sao Paulo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 81B78F9B18D283F30064D95B /* Sao Paulo.jpg */; };
+		81B78FA918D283F30064D95B /* Sao-Paulo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 81B78F9C18D283F30064D95B /* Sao-Paulo.jpg */; };
+		81B78FAC18D284130064D95B /* italy-background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 81B78FAB18D284130064D95B /* italy-background.jpg */; };
+		81B78FAE18D284340064D95B /* Cup-info-artical.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 81B78FAD18D284340064D95B /* Cup-info-artical.jpg */; };
+		81B78FBB18D284400064D95B /* belo-horizonte-city.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 81B78FAF18D284400064D95B /* belo-horizonte-city.jpg */; };
+		81B78FBC18D284400064D95B /* brasilia-city.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 81B78FB018D284400064D95B /* brasilia-city.jpg */; };
+		81B78FBD18D284400064D95B /* cuiaba-city.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 81B78FB118D284400064D95B /* cuiaba-city.jpg */; };
+		81B78FBE18D284400064D95B /* curitiba-city.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 81B78FB218D284400064D95B /* curitiba-city.jpg */; };
+		81B78FBF18D284400064D95B /* fortaleza-city.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 81B78FB318D284400064D95B /* fortaleza-city.jpg */; };
+		81B78FC118D284400064D95B /* natal-city.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 81B78FB518D284400064D95B /* natal-city.jpg */; };
+		81B78FC218D284400064D95B /* porto-alegre-city.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 81B78FB618D284400064D95B /* porto-alegre-city.jpg */; };
+		81B78FC318D284400064D95B /* recife-city.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 81B78FB718D284400064D95B /* recife-city.jpg */; };
+		81B78FC418D284400064D95B /* rio-de-janeiro-city.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 81B78FB818D284400064D95B /* rio-de-janeiro-city.jpg */; };
+		81B78FC518D284400064D95B /* salvador-city.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 81B78FB918D284400064D95B /* salvador-city.jpg */; };
+		81B78FC618D284400064D95B /* sao-paulo-city.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 81B78FBA18D284400064D95B /* sao-paulo-city.jpg */; };
+		81B78FCA18D287900064D95B /* spain-back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 81B78FC918D287900064D95B /* spain-back.jpg */; };
+		81B78FCF18D288ED0064D95B /* manaus-city.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 81B78FCE18D288ED0064D95B /* manaus-city.jpg */; };
+		81B78FD218D29A680064D95B /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B78FD118D29A680064D95B /* AboutViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,9 +107,41 @@
 		81841BA318CCCF2D00F955AF /* ScheduleDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleDetailsViewController.m; sourceTree = "<group>"; };
 		81841BA818CCD6B100F955AF /* ScheduleData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleData.h; sourceTree = "<group>"; };
 		81841BA918CCD6B100F955AF /* ScheduleData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleData.m; sourceTree = "<group>"; };
-		81B78EF118CEAE7A0064D95B /* brazil-back-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "brazil-back-2.jpg"; sourceTree = "<group>"; };
 		81B78F8618D154980064D95B /* ResearchDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResearchDetailsViewController.h; sourceTree = "<group>"; };
 		81B78F8718D154980064D95B /* ResearchDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResearchDetailsViewController.m; sourceTree = "<group>"; };
+		81B78F8918D283D30064D95B /* brazil-team.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "brazil-team.jpg"; sourceTree = "<group>"; };
+		81B78F8A18D283D30064D95B /* italy-team.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "italy-team.jpg"; sourceTree = "<group>"; };
+		81B78F8B18D283D30064D95B /* usa-team.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "usa-team.jpg"; sourceTree = "<group>"; };
+		81B78F9018D283F20064D95B /* belo-horizonte.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "belo-horizonte.jpg"; sourceTree = "<group>"; };
+		81B78F9118D283F20064D95B /* brasilia.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = brasilia.jpg; sourceTree = "<group>"; };
+		81B78F9218D283F20064D95B /* Cuiaba.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Cuiaba.jpg; sourceTree = "<group>"; };
+		81B78F9318D283F20064D95B /* curitiba.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = curitiba.jpg; sourceTree = "<group>"; };
+		81B78F9418D283F20064D95B /* fortaleza.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fortaleza.jpg; sourceTree = "<group>"; };
+		81B78F9518D283F20064D95B /* manaus.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = manaus.jpg; sourceTree = "<group>"; };
+		81B78F9618D283F30064D95B /* natal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = natal.jpg; sourceTree = "<group>"; };
+		81B78F9718D283F30064D95B /* porto-alegre.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "porto-alegre.jpg"; sourceTree = "<group>"; };
+		81B78F9818D283F30064D95B /* recife.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = recife.jpg; sourceTree = "<group>"; };
+		81B78F9918D283F30064D95B /* rio-de-janeiro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "rio-de-janeiro.jpg"; sourceTree = "<group>"; };
+		81B78F9A18D283F30064D95B /* salvador.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = salvador.jpg; sourceTree = "<group>"; };
+		81B78F9B18D283F30064D95B /* Sao Paulo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Sao Paulo.jpg"; sourceTree = "<group>"; };
+		81B78F9C18D283F30064D95B /* Sao-Paulo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Sao-Paulo.jpg"; sourceTree = "<group>"; };
+		81B78FAB18D284130064D95B /* italy-background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "italy-background.jpg"; sourceTree = "<group>"; };
+		81B78FAD18D284340064D95B /* Cup-info-artical.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Cup-info-artical.jpg"; sourceTree = "<group>"; };
+		81B78FAF18D284400064D95B /* belo-horizonte-city.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "belo-horizonte-city.jpg"; sourceTree = "<group>"; };
+		81B78FB018D284400064D95B /* brasilia-city.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "brasilia-city.jpg"; sourceTree = "<group>"; };
+		81B78FB118D284400064D95B /* cuiaba-city.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "cuiaba-city.jpg"; sourceTree = "<group>"; };
+		81B78FB218D284400064D95B /* curitiba-city.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "curitiba-city.jpg"; sourceTree = "<group>"; };
+		81B78FB318D284400064D95B /* fortaleza-city.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "fortaleza-city.jpg"; sourceTree = "<group>"; };
+		81B78FB518D284400064D95B /* natal-city.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "natal-city.jpg"; sourceTree = "<group>"; };
+		81B78FB618D284400064D95B /* porto-alegre-city.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "porto-alegre-city.jpg"; sourceTree = "<group>"; };
+		81B78FB718D284400064D95B /* recife-city.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "recife-city.jpg"; sourceTree = "<group>"; };
+		81B78FB818D284400064D95B /* rio-de-janeiro-city.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "rio-de-janeiro-city.jpg"; sourceTree = "<group>"; };
+		81B78FB918D284400064D95B /* salvador-city.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "salvador-city.jpg"; sourceTree = "<group>"; };
+		81B78FBA18D284400064D95B /* sao-paulo-city.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "sao-paulo-city.jpg"; sourceTree = "<group>"; };
+		81B78FC918D287900064D95B /* spain-back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "spain-back.jpg"; sourceTree = "<group>"; };
+		81B78FCE18D288ED0064D95B /* manaus-city.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "manaus-city.jpg"; sourceTree = "<group>"; };
+		81B78FD018D29A680064D95B /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		81B78FD118D29A680064D95B /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,18 +201,20 @@
 		812A430A18CC1E8C001F93DD /* YourCup! */ = {
 			isa = PBXGroup;
 			children = (
-				81B78EF118CEAE7A0064D95B /* brazil-back-2.jpg */,
+				81B78FC818D2845B0064D95B /* Images */,
 				812A431318CC1E8C001F93DD /* AppDelegate.h */,
 				812A431418CC1E8C001F93DD /* AppDelegate.m */,
 				812A431618CC1E8C001F93DD /* Main.storyboard */,
-				81B78F7E18CFFE3D0064D95B /* Main */,
+				81B78F7E18CFFE3D0064D95B /* Main tab */,
+				81841B9B18CCCCB300F955AF /* Schedule/Research */,
 				812A431C18CC1E8C001F93DD /* Images.xcassets */,
 				812A430B18CC1E8C001F93DD /* Supporting Files */,
 				81841B8F18CCC28800F955AF /* BlurEffect.h */,
 				81841B9018CCC28800F955AF /* BlurEffect.m */,
 				81841B9218CCC48500F955AF /* CustomView.h */,
 				81841B9318CCC48500F955AF /* CustomView.m */,
-				81841B9B18CCCCB300F955AF /* Schedule/Research */,
+				81B78FD018D29A680064D95B /* AboutViewController.h */,
+				81B78FD118D29A680064D95B /* AboutViewController.m */,
 			);
 			path = "YourCup!";
 			sourceTree = "<group>";
@@ -202,13 +267,83 @@
 			name = Schedule/Research;
 			sourceTree = "<group>";
 		};
-		81B78F7E18CFFE3D0064D95B /* Main */ = {
+		81B78F7E18CFFE3D0064D95B /* Main tab */ = {
 			isa = PBXGroup;
 			children = (
 				812A431918CC1E8C001F93DD /* ViewController.h */,
 				812A431A18CC1E8C001F93DD /* ViewController.m */,
 			);
-			name = Main;
+			name = "Main tab";
+			sourceTree = "<group>";
+		};
+		81B78F8F18D283DA0064D95B /* teams */ = {
+			isa = PBXGroup;
+			children = (
+				81B78F8918D283D30064D95B /* brazil-team.jpg */,
+				81B78F8A18D283D30064D95B /* italy-team.jpg */,
+				81B78F8B18D283D30064D95B /* usa-team.jpg */,
+			);
+			name = teams;
+			sourceTree = "<group>";
+		};
+		81B78FAA18D283FB0064D95B /* Stadiums */ = {
+			isa = PBXGroup;
+			children = (
+				81B78F9018D283F20064D95B /* belo-horizonte.jpg */,
+				81B78F9118D283F20064D95B /* brasilia.jpg */,
+				81B78F9218D283F20064D95B /* Cuiaba.jpg */,
+				81B78F9318D283F20064D95B /* curitiba.jpg */,
+				81B78F9418D283F20064D95B /* fortaleza.jpg */,
+				81B78F9518D283F20064D95B /* manaus.jpg */,
+				81B78F9618D283F30064D95B /* natal.jpg */,
+				81B78F9718D283F30064D95B /* porto-alegre.jpg */,
+				81B78F9818D283F30064D95B /* recife.jpg */,
+				81B78F9918D283F30064D95B /* rio-de-janeiro.jpg */,
+				81B78F9A18D283F30064D95B /* salvador.jpg */,
+				81B78F9B18D283F30064D95B /* Sao Paulo.jpg */,
+				81B78F9C18D283F30064D95B /* Sao-Paulo.jpg */,
+			);
+			name = Stadiums;
+			sourceTree = "<group>";
+		};
+		81B78FC718D2844B0064D95B /* Cities */ = {
+			isa = PBXGroup;
+			children = (
+				81B78FAF18D284400064D95B /* belo-horizonte-city.jpg */,
+				81B78FB018D284400064D95B /* brasilia-city.jpg */,
+				81B78FB118D284400064D95B /* cuiaba-city.jpg */,
+				81B78FB218D284400064D95B /* curitiba-city.jpg */,
+				81B78FB318D284400064D95B /* fortaleza-city.jpg */,
+				81B78FCE18D288ED0064D95B /* manaus-city.jpg */,
+				81B78FB518D284400064D95B /* natal-city.jpg */,
+				81B78FB618D284400064D95B /* porto-alegre-city.jpg */,
+				81B78FB718D284400064D95B /* recife-city.jpg */,
+				81B78FB818D284400064D95B /* rio-de-janeiro-city.jpg */,
+				81B78FB918D284400064D95B /* salvador-city.jpg */,
+				81B78FBA18D284400064D95B /* sao-paulo-city.jpg */,
+			);
+			name = Cities;
+			sourceTree = "<group>";
+		};
+		81B78FC818D2845B0064D95B /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				81B78FC718D2844B0064D95B /* Cities */,
+				81B78FAA18D283FB0064D95B /* Stadiums */,
+				81B78F8F18D283DA0064D95B /* teams */,
+				81B78FCB18D287950064D95B /* Backgrounds */,
+				81B78FAD18D284340064D95B /* Cup-info-artical.jpg */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		81B78FCB18D287950064D95B /* Backgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				81B78FAB18D284130064D95B /* italy-background.jpg */,
+				81B78FC918D287900064D95B /* spain-back.jpg */,
+			);
+			name = Backgrounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,9 +422,39 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81B78FA318D283F30064D95B /* natal.jpg in Resources */,
+				81B78F9F18D283F30064D95B /* Cuiaba.jpg in Resources */,
+				81B78FC518D284400064D95B /* salvador-city.jpg in Resources */,
+				81B78FCA18D287900064D95B /* spain-back.jpg in Resources */,
+				81B78FAC18D284130064D95B /* italy-background.jpg in Resources */,
+				81B78F8E18D283D30064D95B /* usa-team.jpg in Resources */,
+				81B78FA018D283F30064D95B /* curitiba.jpg in Resources */,
+				81B78FBB18D284400064D95B /* belo-horizonte-city.jpg in Resources */,
+				81B78F9E18D283F30064D95B /* brasilia.jpg in Resources */,
+				81B78FC218D284400064D95B /* porto-alegre-city.jpg in Resources */,
+				81B78FA418D283F30064D95B /* porto-alegre.jpg in Resources */,
+				81B78FA118D283F30064D95B /* fortaleza.jpg in Resources */,
+				81B78FA518D283F30064D95B /* recife.jpg in Resources */,
+				81B78F8D18D283D30064D95B /* italy-team.jpg in Resources */,
+				81B78F9D18D283F30064D95B /* belo-horizonte.jpg in Resources */,
+				81B78FCF18D288ED0064D95B /* manaus-city.jpg in Resources */,
+				81B78F8C18D283D30064D95B /* brazil-team.jpg in Resources */,
 				812A431D18CC1E8C001F93DD /* Images.xcassets in Resources */,
-				81B78EF218CEAE7A0064D95B /* brazil-back-2.jpg in Resources */,
+				81B78FA618D283F30064D95B /* rio-de-janeiro.jpg in Resources */,
+				81B78FA218D283F30064D95B /* manaus.jpg in Resources */,
+				81B78FBE18D284400064D95B /* curitiba-city.jpg in Resources */,
+				81B78FA818D283F30064D95B /* Sao Paulo.jpg in Resources */,
+				81B78FBD18D284400064D95B /* cuiaba-city.jpg in Resources */,
+				81B78FC118D284400064D95B /* natal-city.jpg in Resources */,
+				81B78FBC18D284400064D95B /* brasilia-city.jpg in Resources */,
+				81B78FAE18D284340064D95B /* Cup-info-artical.jpg in Resources */,
+				81B78FA718D283F30064D95B /* salvador.jpg in Resources */,
+				81B78FA918D283F30064D95B /* Sao-Paulo.jpg in Resources */,
+				81B78FC418D284400064D95B /* rio-de-janeiro-city.jpg in Resources */,
+				81B78FC318D284400064D95B /* recife-city.jpg in Resources */,
+				81B78FBF18D284400064D95B /* fortaleza-city.jpg in Resources */,
 				812A430F18CC1E8C001F93DD /* InfoPlist.strings in Resources */,
+				81B78FC618D284400064D95B /* sao-paulo-city.jpg in Resources */,
 				812A431818CC1E8C001F93DD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,6 +480,7 @@
 				81841BA118CCCEC800F955AF /* DataLayerSchedule.m in Sources */,
 				812A431B18CC1E8C001F93DD /* ViewController.m in Sources */,
 				81841B9118CCC28800F955AF /* BlurEffect.m in Sources */,
+				81B78FD218D29A680064D95B /* AboutViewController.m in Sources */,
 				81841B9A18CCCCAB00F955AF /* CustomCell.m in Sources */,
 				812A431518CC1E8C001F93DD /* AppDelegate.m in Sources */,
 				812A431118CC1E8C001F93DD /* main.m in Sources */,

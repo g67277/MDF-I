@@ -146,7 +146,7 @@
     
     // setting background image;
     
-    UIImage* backgroundImg = [UIImage imageNamed:@"brazil-back-2.jpg"];
+    UIImage* backgroundImg = [UIImage imageNamed:@"spain-back.jpg"];
     
     
     // changing self background

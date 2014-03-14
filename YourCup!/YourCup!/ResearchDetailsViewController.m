@@ -74,7 +74,7 @@
     
     // Setting background
     
-    UIImage* backgroundImg = [UIImage imageNamed:@"spain back"];
+    UIImage* backgroundImg = [UIImage imageNamed:@"spain-back.jpg"];
     self.background.image = [blurEffect setupBlurredImage:backgroundImg];
     
 

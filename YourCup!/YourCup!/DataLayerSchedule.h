@@ -28,4 +28,6 @@
 @property (nonatomic, strong)NSString* cResearchText;
 @property (nonatomic, strong)UIImage* cResearchImg;
 
+@property (nonatomic, strong)NSString* cAppName;
+@property (nonatomic, strong)NSString* cAppDisk;
 @end

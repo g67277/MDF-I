@@ -1,44 +1,55 @@
 //
-//  ViewController.m
+//  AboutViewController.m
 //  YourCup!
 //
-//  Created by Nazir Shuqair on 3/8/14.
+//  Created by Nazir Shuqair on 3/13/14.
 //  Copyright (c) 2014 Me Time Studios. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "AboutViewController.h"
+#import "DataLayerSchedule.h"
+#import "ScheduleData.h"
 #import "BlurEffect.h"
-#import "CustomView.h"
 
-@interface ViewController ()
+@interface AboutViewController ()
 
-@property (weak, nonatomic) IBOutlet UIImageView *backgroundImg;
+@property (nonatomic, weak) IBOutlet UIImageView* background;
 
 @end
 
-@implementation ViewController
+@implementation AboutViewController
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
+
+
+- (void) viewWillAppear:(BOOL)animated{
+    
+    ScheduleData * scheduleData = [[ScheduleData alloc] init];
+    
+    
+    appName.text = [scheduleData appName];
+    appDisk.text = [scheduleData appDisc];
+    
+}
 
 - (void)viewDidLoad
 {
+    
     // initializing classes
     
-    blurEffect = [[BlurEffect alloc] init];
-    customeView = [[CustomView alloc] init];
-    
-        
-    
-    // Changing the uiview/image box
-    
-    mainBox = [customeView uniformView:mainBox color:[UIColor colorWithWhite:1 alpha:1]];
-    detailText = [customeView uniformView:detailText color:[UIColor colorWithWhite:1 alpha:1]];
-    detailPanner = [customeView uniformImgBox:detailPanner];
-    
-    
+    BlurEffect* blurEffect = [[BlurEffect alloc] init];
     
     // adding a backgound blur
     
     UIImage* background = [UIImage imageNamed:@"italy-background.jpg"];
-    self.backgroundImg.image = [blurEffect setupBlurredImage:background];
+    self.background.image = [blurEffect setupBlurredImage:background];
     
     // Nav bar custome title/buttons
     
@@ -52,17 +63,10 @@
     // Tab bar custome changes
     
     self.tabBarController.tabBar.tintColor = [UIColor whiteColor];
-
     
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	// Do any additional setup after loading the view.
 }
-
-
-
-//----------------------------------------------------------------------------------------------------------------
-
-
 
 - (void)didReceiveMemoryWarning
 {

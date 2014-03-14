@@ -67,9 +67,9 @@
     scrollView.backgroundColor = [UIColor clearColor];
     
     // Changing the uiview/image box
-    box1 = [customView uniformView:box1 color:[UIColor colorWithWhite:1 alpha:.9]];
+    box1 = [customView uniformView:box1 color:[UIColor colorWithWhite:1 alpha:.85]];
     box2 = [customView uniformView:box2 color:[UIColor colorWithWhite:1 alpha:1]];
-    box3 = [customView uniformView:box3 color:[UIColor colorWithWhite:1 alpha:1]];
+    box3 = [customView uniformView:box3 color:[UIColor colorWithWhite:1 alpha:.85]];
     
     
     // Nav bar custome title/buttons
@@ -82,7 +82,7 @@
     
     // Setting background
     
-    UIImage* backgroundImg = [UIImage imageNamed:@"spain back"];
+    UIImage* backgroundImg = [UIImage imageNamed:@"spain-back.jpg"];
     self.background.image = [blurEffect setupBlurredImage:backgroundImg];
     
     [super viewDidLoad];
