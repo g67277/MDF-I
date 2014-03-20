@@ -10,10 +10,12 @@
 
 @interface CustomCell : UITableViewCell{
     
-    IBOutlet UILabel* testLabel;
+    IBOutlet UILabel* titleLabel;
+    IBOutlet UIImageView* restLogo;
+    
 }
 
-- (void) refreshCellWithInfo:(NSString*) label;
+- (void) refreshCellWithInfo:(NSString*) label iconImg:(UIImage*) iconImg;
 
 
 @end

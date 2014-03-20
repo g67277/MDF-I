@@ -20,11 +20,14 @@
 }
 
 
-- (void) refreshCellWithInfo:(NSString*) label{
+- (void) refreshCellWithInfo:(NSString*) label iconImg:(UIImage*) iconImg{
     
-    testLabel.text = label;
+    titleLabel.text = label;
+    restLogo.image = iconImg;
     
 }
+
+
 - (void)awakeFromNib
 {
     // Initialization code

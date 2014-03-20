@@ -24,6 +24,10 @@
 		816AF44218D69CEB00BC7904 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 816AF44118D69CEB00BC7904 /* CoreLocation.framework */; };
 		816AF44418D766EB00BC7904 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 816AF44318D766EB00BC7904 /* Images.xcassets */; };
 		816AF44718D7698C00BC7904 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 816AF44618D7698C00BC7904 /* CustomCell.m */; };
+		81A022C618D92E1C00A890D5 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81A022C518D92E1C00A890D5 /* Accelerate.framework */; };
+		81C9858B18D79EF400737C86 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C9858A18D79EF400737C86 /* DetailsViewController.m */; };
+		81C9858E18D7A54600737C86 /* DataFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C9858D18D7A54600737C86 /* DataFeed.m */; };
+		81C9859118D7A58600737C86 /* DataLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C9859018D7A58600737C86 /* DataLayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +64,13 @@
 		816AF44318D766EB00BC7904 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		816AF44518D7698C00BC7904 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
 		816AF44618D7698C00BC7904 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
+		81A022C518D92E1C00A890D5 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		81C9858918D79EF400737C86 /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
+		81C9858A18D79EF400737C86 /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
+		81C9858C18D7A54600737C86 /* DataFeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataFeed.h; sourceTree = "<group>"; };
+		81C9858D18D7A54600737C86 /* DataFeed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataFeed.m; sourceTree = "<group>"; };
+		81C9858F18D7A58600737C86 /* DataLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataLayer.h; sourceTree = "<group>"; };
+		81C9859018D7A58600737C86 /* DataLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataLayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81A022C618D92E1C00A890D5 /* Accelerate.framework in Frameworks */,
 				816AF44218D69CEB00BC7904 /* CoreLocation.framework in Frameworks */,
 				816AF40D18D69B1900BC7904 /* CoreGraphics.framework in Frameworks */,
 				816AF40F18D69B1900BC7904 /* UIKit.framework in Frameworks */,
@@ -110,6 +122,7 @@
 		816AF40918D69B1900BC7904 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				81A022C518D92E1C00A890D5 /* Accelerate.framework */,
 				816AF44118D69CEB00BC7904 /* CoreLocation.framework */,
 				816AF43F18D69B2F00BC7904 /* MapKit.framework */,
 				816AF40A18D69B1900BC7904 /* Foundation.framework */,
@@ -132,6 +145,12 @@
 				816AF44618D7698C00BC7904 /* CustomCell.m */,
 				816AF44318D766EB00BC7904 /* Images.xcassets */,
 				816AF41118D69B1900BC7904 /* Supporting Files */,
+				81C9858918D79EF400737C86 /* DetailsViewController.h */,
+				81C9858A18D79EF400737C86 /* DetailsViewController.m */,
+				81C9858C18D7A54600737C86 /* DataFeed.h */,
+				81C9858D18D7A54600737C86 /* DataFeed.m */,
+				81C9858F18D7A58600737C86 /* DataLayer.h */,
+				81C9859018D7A58600737C86 /* DataLayer.m */,
 			);
 			path = "Feed Me";
 			sourceTree = "<group>";
@@ -269,7 +288,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81C9859118D7A58600737C86 /* DataLayer.m in Sources */,
 				816AF42118D69B1900BC7904 /* ViewController.m in Sources */,
+				81C9858E18D7A54600737C86 /* DataFeed.m in Sources */,
+				81C9858B18D79EF400737C86 /* DetailsViewController.m in Sources */,
 				816AF41B18D69B1900BC7904 /* AppDelegate.m in Sources */,
 				816AF44718D7698C00BC7904 /* CustomCell.m in Sources */,
 				816AF41718D69B1900BC7904 /* main.m in Sources */,
@@ -477,6 +499,7 @@
 				816AF43B18D69B1900BC7904 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		816AF43C18D69B1900BC7904 /* Build configuration list for PBXNativeTarget "Feed MeTests" */ = {
 			isa = XCConfigurationList;
@@ -485,6 +508,7 @@
 				816AF43E18D69B1900BC7904 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

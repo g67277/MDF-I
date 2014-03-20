@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>CFE4C3CC-D924-4B11-BE2C-1D2343C24FA3</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Feed Me</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>AF1CFA95-CFC6-43B8-8A9B-9BA5DCBEBEB3</key>
+		<string>https://github.com/g67277/MDF-I.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Feed Me/Feed Me.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>AF1CFA95-CFC6-43B8-8A9B-9BA5DCBEBEB3</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/g67277/MDF-I.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>AF1CFA95-CFC6-43B8-8A9B-9BA5DCBEBEB3</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>AF1CFA95-CFC6-43B8-8A9B-9BA5DCBEBEB3</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MDF I</string>
+		</dict>
+	</array>
+</dict>
+</plist>
