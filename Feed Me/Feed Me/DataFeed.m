@@ -102,6 +102,8 @@
 
 - (NSMutableArray*) coordArray{
     
+    // Coordinates array for the "view All" button
+    
     MKPointAnnotation* point1 = [[MKPointAnnotation alloc] init];
     point1.coordinate = CLLocationCoordinate2DMake(38.923899f, -77.229529f);
     point1.title = @"Blimpie";

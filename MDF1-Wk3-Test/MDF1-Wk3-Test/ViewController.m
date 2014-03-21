@@ -58,7 +58,7 @@
     
 }
 
-/*- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation{
+- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation{
     
     // checks for existing ping annotation view
     
@@ -75,7 +75,7 @@
     // displays the pin annotation view
     
     return pinView;
-}*/
+}
 
 - (void)didReceiveMemoryWarning
 {

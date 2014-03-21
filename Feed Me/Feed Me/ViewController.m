@@ -13,7 +13,6 @@
 
 @interface ViewController ()
 
-@property (nonatomic, weak) IBOutlet UIView *mainView;
 
 @end
 
@@ -64,7 +63,7 @@
 - (void)viewDidLoad
 {
     
-    
+    mainView.frame = CGRectMake(0, 0, self.view.frame.size.width, 568);
     
     dataFeed = [[DataFeed alloc] init];
     
@@ -72,6 +71,9 @@
     cellRestArray = [dataFeed restArray];
     coordinateArray = [dataFeed coordArray];
     
+    //NSString* test = [[cellRestArray objectAtIndex:2] objectAtIndex:0];
+    
+    //NSLog(@"%@", test);
     
     // adding shadow to a uiview
     
@@ -95,6 +97,22 @@
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
+- (void) scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    if (scrollView == mainScrollView) {
+        CGFloat yPos = -scrollView.contentOffset.y;
+        CGRect imgRect = mainView.frame;
+        //NSLog(@"%f", yPos);
+        if (yPos < 0){
+            imgRect.origin.y = yPos/3;
+            mainView.frame = imgRect;
+        }
+
+    }
+}
+
+
+
 - (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation{
     
     coord = newLocation.coordinate;
@@ -102,10 +120,6 @@
 }
 
 - (void) viewDidAppear:(BOOL)animated{
-    
-    // Where I want to focus
-    // Current location line
-    //CLLocationCoordinate2D zoomLocation = CLLocationCoordinate2DMake(coord.latitude, coord.longitude);
     
     CLLocationCoordinate2D zoomLocation = CLLocationCoordinate2DMake(38.9226662f,-77.2280853f);
     
@@ -125,18 +139,28 @@
     //NSLog(@"%@", button);
     
     if (button.tag == 1) {
-        _mainView.hidden = YES;
-        mainScrollView.hidden = YES;
+        backBtn.alpha = 0.0;
         backBtn.hidden = NO;
+        [UIView animateWithDuration:0.5 animations:^{
+            mainScrollView.frame = CGRectMake(0, 568, 320, 0);
+            mainView.frame = CGRectMake(0, 568, 320, 0);
+            backBtn.alpha = 1.0;
+        }];
+        
     }else if (button.tag == 2){
-        _mainView.hidden = NO;
-        mainScrollView.hidden = NO;
-        backBtn.hidden = YES;
+        [UIView animateWithDuration:0.5 animations:^{
+            mainScrollView.frame = CGRectMake(0, 0, 320, 568);
+            mainView.frame = CGRectMake(0, 0, 320, 568);
+            backBtn.alpha = 0.0;
+            
+            [self scrollViewDidScroll:mainScrollView];
+        }];
     }
 }
 
 - (IBAction)done:(UIStoryboardSegue*)segue{
     
+    [self scrollViewDidScroll:mainScrollView];
     
 }
 

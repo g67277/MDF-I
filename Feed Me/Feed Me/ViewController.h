@@ -18,6 +18,7 @@
     IBOutlet MKMapView* mainMap;
     IBOutlet UIButton* backBtn;
     IBOutlet UIScrollView* mainScrollView;
+    IBOutlet UIView *mainView;
     IBOutlet UIView* viewAll;
     
     CLLocationManager* locationManager;

@@ -8,6 +8,8 @@
 
 #import "DetailsViewController.h"
 
+#define HeaderHeight 297.0f
+
 @interface DetailsViewController ()
 
 @end
@@ -32,6 +34,7 @@
     restImg.image = self.currentCell.lImg;
     
     
+    
 }
 
 - (void) viewDidAppear:(BOOL)animated{
@@ -44,6 +47,8 @@
     zoomSpan.longitudeDelta = .03f;
     [detailMap setRegion:MKCoordinateRegionMake(zoomLocation, zoomSpan) animated: false];
     
+    // Adding the annotation to the detail page map
+    
     MKPointAnnotation* point = [[MKPointAnnotation alloc] init];
     point.coordinate = zoomLocation;
     point.title = restTitle.text;
@@ -54,14 +59,33 @@
 
 - (void)viewDidLoad
 {
-
-    //backButton.layer.zPosition = 50;
-    //backButton.autoresizingMask = UIViewAutoresizingNone;
-    //backButton.frame = btFrame;
+    
+    // setting the main image frame for the zoom effect method
+    restImg.frame = CGRectMake(0, 0, self.view.frame.size.width, HeaderHeight);
     
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
+
+// Creating the bouncy/zoom effect for image when scrolling
+
+- (void) scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    CGFloat yPos = -scrollView.contentOffset.y;
+    CGRect imgRect = restImg.frame;
+    //NSLog(@"%f", yPos);
+    if (yPos > 0) {
+        imgRect.origin.x = scrollView.contentOffset.y/2;
+        imgRect.origin.y = scrollView.contentOffset.x/2;
+        imgRect.size.width = 320 + yPos;
+        imgRect.size.height = HeaderHeight+yPos;
+        restImg.frame = imgRect;
+    }else if (yPos < 0){
+        imgRect.origin.y = yPos/2;
+        restImg.frame = imgRect;
+    }
+}
+
 
 - (void)didReceiveMemoryWarning
 {
