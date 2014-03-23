@@ -25,13 +25,49 @@
 
 - (void)viewDidLoad
 {
+    webCalls = [[WebCalls alloc] init];
     
-    test.text = @"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ntesting Each process (application) in OS X or iOS is made up of one or more threads, each of which represents a single path of execution through the application's code. Every application starts with a single thread, which runs the application's main function. Applications can spawn additional threads, each of which executes the code of a specific function.When an application spawns a new thread, that thread becomes an independent entity inside of the application, testing Each process (application) in OS X or iOS is made up of one or more threads, each of which represents a single path of execution through the application's code. Every application starts with a single thread, which runs the application's main function. Applications can spawn additional threads, each of which executes the code of a specific function.When an application spawns a new thread, that thread becomes an independent entity inside of the application, hread becomes an independent entity inside of the application, testing Each process (application) in OS X or iOS is made up of one or more threads, each of which represents a single path of execution through the application's code. Every application starts with a single thread, which runs the application's main function. Applications can spawn additional threads, each of which executes the code of a specific function.When an application spawns a new thread, that thread becomes an independent entity inside of the application";
+    // URL Request coming through webcall class
     
-    //tintView.alpha = .2f;
+    connection = [[NSURLConnection alloc] initWithRequest:[webCalls urlRequest] delegate:self];
+    requestData = [NSMutableData data];
+    
+    
+    sourceLabel.frame = CGRectMake(56, 195, 209, 65);
     
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+}
+
+- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data{
+    
+    if (data != nil) {
+        [requestData appendData:data];
+    }
+}
+
+- (void) scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    CGFloat yPos = -scrollView.contentOffset.y;
+    CGRect imgRect = sourceLabel.frame;
+    //NSLog(@"%f", yPos);
+    if (imgRect.origin.y < 17) {
+        
+    }else if (yPos < 0){
+        imgRect.origin.y = 100 + (yPos/5);
+        sourceLabel.frame = imgRect;
+    }
+}
+
+
+// Finished receiving and displaying data
+
+- (void)connectionDidFinishLoading:(NSURLConnection *)connection{
+    
+    NSString* dataString = [[NSString alloc] initWithData:requestData encoding:NSASCIIStringEncoding];
+    if (dataString != nil) {
+        sourceText.text = [NSString stringWithFormat:@"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n%@", dataString];
+    }
 }
 
 - (void)didReceiveMemoryWarning

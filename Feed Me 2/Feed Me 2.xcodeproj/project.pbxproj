@@ -10,6 +10,7 @@
 		8138920C18DF40E700FB8737 /* UIWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8138920B18DF40E700FB8737 /* UIWebViewController.m */; };
 		8138921118DF503A00FB8737 /* SourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8138921018DF503A00FB8737 /* SourceViewController.m */; };
 		8138921318DF524C00FB8737 /* sourcBack.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8138921218DF524C00FB8737 /* sourcBack.jpg */; };
+		8138921618DF5EB400FB8737 /* WebCalls.m in Sources */ = {isa = PBXBuildFile; fileRef = 8138921518DF5EB400FB8737 /* WebCalls.m */; };
 		816AF40B18D69B1900BC7904 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 816AF40A18D69B1900BC7904 /* Foundation.framework */; };
 		816AF40D18D69B1900BC7904 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 816AF40C18D69B1900BC7904 /* CoreGraphics.framework */; };
 		816AF40F18D69B1900BC7904 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 816AF40E18D69B1900BC7904 /* UIKit.framework */; };
@@ -49,6 +50,8 @@
 		8138920F18DF503A00FB8737 /* SourceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SourceViewController.h; sourceTree = SOURCE_ROOT; };
 		8138921018DF503A00FB8737 /* SourceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SourceViewController.m; sourceTree = SOURCE_ROOT; };
 		8138921218DF524C00FB8737 /* sourcBack.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sourcBack.jpg; sourceTree = "<group>"; };
+		8138921418DF5EB400FB8737 /* WebCalls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebCalls.h; sourceTree = "<group>"; };
+		8138921518DF5EB400FB8737 /* WebCalls.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebCalls.m; sourceTree = "<group>"; };
 		816AF40718D69B1900BC7904 /* Feed Me 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Feed Me 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		816AF40A18D69B1900BC7904 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		816AF40C18D69B1900BC7904 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -180,6 +183,8 @@
 				8138920E18DF501900FB8737 /* Web View */,
 				8138920F18DF503A00FB8737 /* SourceViewController.h */,
 				8138921018DF503A00FB8737 /* SourceViewController.m */,
+				8138921418DF5EB400FB8737 /* WebCalls.h */,
+				8138921518DF5EB400FB8737 /* WebCalls.m */,
 			);
 			name = "Feed Me 2";
 			path = "Feed Me";
@@ -321,6 +326,7 @@
 			files = (
 				81C9859118D7A58600737C86 /* DataLayer.m in Sources */,
 				816AF42118D69B1900BC7904 /* ViewController.m in Sources */,
+				8138921618DF5EB400FB8737 /* WebCalls.m in Sources */,
 				81C9858E18D7A54600737C86 /* DataFeed.m in Sources */,
 				8138920C18DF40E700FB8737 /* UIWebViewController.m in Sources */,
 				81C9858B18D79EF400737C86 /* DetailsViewController.m in Sources */,

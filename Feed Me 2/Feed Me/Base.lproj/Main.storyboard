@@ -20,13 +20,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem title="Back" id="ySR-As-Y2A">
+                                    <barButtonItem image="backButton" id="ySR-As-Y2A">
                                         <connections>
                                             <action selector="onClick:" destination="Ctj-Kr-Ddr" id="g01-hp-9uH"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem width="24" style="plain" systemItem="fixedSpace" id="Ykq-cP-o86"/>
-                                    <barButtonItem tag="1" title="X" id="7YD-v4-CSC">
+                                    <barButtonItem tag="1" image="StopButton" id="7YD-v4-CSC">
                                         <connections>
                                             <action selector="onClick:" destination="Ctj-Kr-Ddr" id="sZV-pK-bgf"/>
                                         </connections>
@@ -90,24 +90,42 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <view alpha="0.74999999999999978" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0wY-yo-hZC">
+                            <view alpha="0.5499999999999996" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0wY-yo-hZC">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.5138113839285714" green="0.12019742533886846" blue="0.053029546744732606" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.37715242346938771" green="0.088228388236016711" blue="0.038925221775622347" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" indicatorStyle="black" text="source" translatesAutoresizingMaskIntoConstraints="NO" id="jnM-Kc-tIf">
-                                <rect key="frame" x="48" y="0.0" width="224" height="520"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" indicatorStyle="black" text="Loading..." translatesAutoresizingMaskIntoConstraints="NO" id="jnM-Kc-tIf">
+                                <rect key="frame" x="33" y="76" width="254" height="468"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="textColor" red="0.97718032529999999" green="0.97718032529999999" blue="0.97718032529999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Ehv-tQ-cGG" id="QOb-JV-wXf"/>
+                                </connections>
                             </textView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AZz-Pa-AH1">
+                                <rect key="frame" x="56" y="100" width="209" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Source" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xiw-oI-0pY">
+                                        <rect key="frame" x="0.0" y="-4" width="209" height="65"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="66"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Source" id="9zx-PH-p2C"/>
                     <connections>
-                        <outlet property="test" destination="jnM-Kc-tIf" id="OCN-Re-M8I"/>
+                        <outlet property="sourceLabel" destination="AZz-Pa-AH1" id="K8S-WV-o2B"/>
+                        <outlet property="sourceText" destination="jnM-Kc-tIf" id="HkR-iy-DrN"/>
                         <outlet property="tintView" destination="0wY-yo-hZC" id="yGD-xq-hjd"/>
                     </connections>
                 </viewController>
@@ -428,7 +446,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="StopButton" width="28" height="35"/>
         <image name="back" width="48" height="47"/>
+        <image name="backButton" width="35" height="30"/>
         <image name="sourcBack.jpg" width="320" height="568"/>
         <image name="triangle" width="320" height="102"/>
         <image name="triangle2" width="320" height="102"/>

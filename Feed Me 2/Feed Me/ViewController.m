@@ -92,7 +92,7 @@
         // tell core location to start updaing location info
         [locationManager startUpdatingLocation];
     }
-    
+        
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -106,6 +106,12 @@
         if (yPos < 0){
             imgRect.origin.y = yPos/3;
             mainView.frame = imgRect;
+        }
+        
+        if (yPos < -100) {
+            [self.tabBarController.tabBar setHidden:YES];
+        }else if (yPos > -100){
+            [self.tabBarController.tabBar setHidden:NO];
         }
 
     }
@@ -152,7 +158,6 @@
             mainScrollView.frame = CGRectMake(0, 0, 320, 568);
             mainView.frame = CGRectMake(0, 0, 320, 568);
             backBtn.alpha = 0.0;
-            
             [self scrollViewDidScroll:mainScrollView];
         }];
     }

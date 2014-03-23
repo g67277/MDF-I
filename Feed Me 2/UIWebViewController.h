@@ -7,12 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WebCalls.h"
 
 @interface UIWebViewController : UIViewController <UIWebViewDelegate>{
     
     IBOutlet UIWebView* foodWebView;
     IBOutlet UIBarButtonItem* stopReload;
     IBOutlet UIBarButtonItem* backbutton;
+    
+    WebCalls* webCalls;
     
 }
 

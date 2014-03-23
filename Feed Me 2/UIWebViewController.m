@@ -35,7 +35,7 @@
             [foodWebView stopLoading];
         }
         stopReload.tag = 2;
-        stopReload.title = @"<-";
+        stopReload.image = [UIImage imageNamed:@"RefreshButton"];
         
     }else if(sender.tag == 2){
         [foodWebView reload];
@@ -47,7 +47,7 @@
 
 - (void)webViewDidStartLoad:(UIWebView *)webView{
     stopReload.tag = 1;
-    stopReload.title = @"X";
+    stopReload.image = [UIImage imageNamed:@"StopButton"];
     
 }
 
@@ -55,7 +55,7 @@
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView{
     stopReload.tag = 2;
-    stopReload.title = @"<-";
+    stopReload.image = [UIImage imageNamed:@"RefreshButton"];
     
     backbutton.enabled = (foodWebView.canGoBack);
     
@@ -63,9 +63,10 @@
 
 - (void)viewDidLoad
 {
+    webCalls = [[WebCalls alloc] init];
     
-    NSURL* url = [[NSURL alloc] initWithString:@"https://www.google.com/search?q=make+me+hungry&source=lnms&tbm=isch&sa=X&ei=GBcvU7LDNePD0QHopIDADw&sqi=2&ved=0CAYQ_AUoAQ&biw=1600&bih=894&dpr=0.9#q=delicious+food&spell=1&tbm=isch"];
-    NSURLRequest* request = [[NSURLRequest alloc] initWithURL:url];
+    NSURLRequest* request = [webCalls urlRequest];
+    
     foodWebView.scalesPageToFit = true;
     [foodWebView loadRequest:request];
     

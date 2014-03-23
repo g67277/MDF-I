@@ -7,11 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WebCalls.h"
 
-@interface SourceViewController : UIViewController{
+@interface SourceViewController : UIViewController <NSURLConnectionDataDelegate>{
     
     IBOutlet UIView* tintView;
-    IBOutlet UITextView* test;
+    IBOutlet UITextView* sourceText;
+    IBOutlet UIView* sourceLabel;
+    
+    WebCalls* webCalls;
+    
+    NSURLConnection* connection;
+    NSMutableData* requestData;
 }
 
 @end

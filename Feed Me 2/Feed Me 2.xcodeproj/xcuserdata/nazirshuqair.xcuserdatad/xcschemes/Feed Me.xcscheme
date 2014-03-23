@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "816AF40618D69B1900BC7904"
-               BuildableName = "Feed Me.app"
+               BuildableName = "Feed Me 2.app"
                BlueprintName = "Feed Me 2"
                ReferencedContainer = "container:Feed Me 2.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "816AF42718D69B1900BC7904"
-               BuildableName = "Feed MeTests.xctest"
+               BuildableName = "Feed Me 2Tests.xctest"
                BlueprintName = "Feed Me 2Tests"
                ReferencedContainer = "container:Feed Me 2.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "816AF40618D69B1900BC7904"
-            BuildableName = "Feed Me.app"
+            BuildableName = "Feed Me 2.app"
             BlueprintName = "Feed Me 2"
             ReferencedContainer = "container:Feed Me 2.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "816AF40618D69B1900BC7904"
-            BuildableName = "Feed Me.app"
+            BuildableName = "Feed Me 2.app"
             BlueprintName = "Feed Me 2"
             ReferencedContainer = "container:Feed Me 2.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "816AF40618D69B1900BC7904"
-            BuildableName = "Feed Me.app"
+            BuildableName = "Feed Me 2.app"
             BlueprintName = "Feed Me 2"
             ReferencedContainer = "container:Feed Me 2.xcodeproj">
          </BuildableReference>
